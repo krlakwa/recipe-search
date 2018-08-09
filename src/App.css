@@ -3,12 +3,124 @@
 }
 
 .App-header {
+  box-sizing: border-box;
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  padding: 25px;
   color: white;
 }
 
 .App-title {
   font-size: 1.5em;
+}
+
+.recipes__box {
+  height: 360px;
+  background: #fff;
+  margin: 10px 5px 0 5px;
+  padding-bottom: 2rem;
+  box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.5);
+  text-align: left;
+  overflow: hidden;
+}
+
+.recipes__box:hover {
+  box-shadow: -1px 2px 34px -13px rgba(0,0,0,1);
+  cursor: pointer;
+}
+
+.recipes__img {
+  width: 100%;
+  height: 220px;
+}
+
+.recipe__text {
+  margin-left: 15px;
+}
+
+.recipes__title {
+  color: #e74c3c;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 1.8rem 0 0.2rem 0;
+}
+
+.recipes__subtitle {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.recipes__link {
+  color: #2c3e50;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.recipes__link:hover {
+  color: #e74c3c;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  margin-top: 15px;
+}
+
+.form__input {
+  padding: .4rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #2c3e50;
+  margin-right: 5px;
+  outline: none;
+}
+
+.form__button {
+  position: relative;
+  padding: .4rem .9rem;
+  border: none;
+  border-top: 2px solid #2c3e50;
+  border-bottom: 2px solid #2c3e50;
+  background: transparent;
+  color: #2c3e50;
+  font-size: 1rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  outline: none;
+}
+
+.form__button::before,
+.form__button::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #2c3e50;
+  transition: all .2s ease-in-out;
+}
+
+.form__button::before {
+  left: 0;
+  top: -100%;
+}
+
+.form__button::after {
+  left: 98%;
+  top: 100%;
+}
+
+.form__button:hover {
+  cursor: pointer;
+}
+
+.form__button:hover::after,
+.form__button:hover::before {
+  top: 0;
+}
+
+input[type="text"] {
+  outline: none;
 }
