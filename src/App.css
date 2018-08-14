@@ -124,3 +124,32 @@ form {
 input[type="text"] {
   outline: none;
 }
+/*=================LOADER==================*/
+.loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+
+}
+
+.loader::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border: 3px solid #e74c3c;
+  border-radius: 50%;
+  border-color: #e74c3c transparent #e74c3c transparent;
+  animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
