@@ -21,6 +21,7 @@
   box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.5);
   text-align: left;
   overflow: hidden;
+  transition: all .3s ease-in-out;
 }
 
 .recipes__box:hover {
