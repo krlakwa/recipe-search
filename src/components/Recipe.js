@@ -16,10 +16,12 @@ const Recipe = props => {
             <a
               className="recipes__link"
               href={props.recipe.publisher_url}
-              target="_blank"> { props.recipe.publisher }
+              target="_blank">
+                { props.recipe.publisher }
             </a>
         </p>
       </div>
+      <button class="recipe__button">View recipe</button>
     </div>
   </div>
  )
